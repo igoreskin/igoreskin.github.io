@@ -1,0 +1,21 @@
+# Site settings
+title: My Blog at Learn.co
+header-img: img/home-bg.png
+email: eskinhd@gmail.com
+copyright_name: igoreskin
+description: > # this means to ignore newlines until "baseurl:"
+  Learning Software Development with Excitement and Dedication 
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  igoreskin
+learn_profile: igoreskin
+email_username: eskinhd@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
