@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Why did you decide to learn software development?
-date:   2017-05-15 17:20:44 +0000
+date:   2017-05-15 13:20:45 -0400
 ---
 
 
@@ -15,7 +15,7 @@ I love skills. To me mastering a skill has never actually been a means to an end
 
 I’ve always been interested in computer programming, but more on a passive basis, considering it something almost extraterrestrial that only selected few can actually do – a place you always end up when you don’t do your research. Even before languages like Ruby and Python were born, I experimented with C and was fascinated by it, but way too caught up in my work and massive responsibilities at the time to actively pursue it. My serious, real-life interest toward the subject began to rapidly grow when, working on Wall Street for a year and a half, I was hearing every day about algorithms taking over equity trading as the explanation why even very experienced trades were unable to place successful trades anymore, and when one day I came to the office to find out that the company was moving out of three quarters of its premises, the bells of fate rang, I left the field and finally gave coding my complete and undivided attention. 
 
-When I started to learn coding, I immediately realize two things: firstly, the enjoyment of practicing it was something I hadn’t felt in years to say the least, and the second thing was not as much a realization as a feeling of regret and even anger that I didn’t submerged myself into it years ago, which is just a normal intuitive reaction of any human being with a healthy level of self-criticism. 
+When I started to learn coding, I immediately realized two things: firstly, the enjoyment of practicing it was something I hadn’t felt in years to say the least, and the second thing was not as much a realization as a feeling of regret and even anger that I didn’t submerged myself into it years ago, which is just a normal intuitive reaction of any human being with a healthy level of self-criticism. 
 
 The deeper I get into programming, the more I enjoy it. Although it’s a well-known fact that the more you know, the more you realize how little you actually know, this is exactly what makes this journey so endlessly fascinating. But this time it’s not even as much about the enjoyment of learning and practicing, as it is about an almost overwhelming feeling of becoming a part of a growing global phenomenon, something that can enable you not only to love what you do for the rest of your life, which is one of the definitions of happiness, but also, if you dedicate yourself to mastering this skill, to make a difference in the world and tremendously improve probably every single aspect of your life in the process. In other words, at this point in time learning and mastering the skill of programming seems to be the best, most logical and most productive way to experience the inseparability of yourself and your time in the absolutely best meaning of this expression. 
 
