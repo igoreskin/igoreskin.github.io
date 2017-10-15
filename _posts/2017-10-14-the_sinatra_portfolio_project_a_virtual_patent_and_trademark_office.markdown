@@ -1,0 +1,22 @@
+---
+layout: post
+title:      "The Sinatra Portfolio Project – a Virtual Patent and Trademark Office"
+date:       2017-10-15 03:16:01 +0000
+permalink:  the_sinatra_portfolio_project_a_virtual_patent_and_trademark_office
+---
+
+
+Picking the right idea for a coding project is actually a project in and of itself, which explains the existence of numerous websites intended to help you or at least give you an idea about what such an idea could be. In my opinion, perhaps the most important selection criterion, as simple as it might seem, is the fact that you actually really love your project idea, because feeling passionate about it is very likely to translate into an interesting application with witty coding solutions – in other words, if you l really love the idea of your project, you are likely to exceed yourself and write a better application than you are in fact even capable of. 
+
+I was kind of torn between just following the project instructions and complying with the project requirements on the one hand (a sensible way to do things) and trying something more complex on the other, something that I hadn’t yet encountered in the curriculum (kind of a vane way to do things). As it almost always happens, vanity won hands down, and after some consideration I decided to try to code a virtual patent registry with more than one user model with the intention to challenge myself and see whether I end up being able to teach the app to recognize which of the models has just logged in. 
+
+The first thing I did was grabbing a pencil and a sheet of paper and thoroughly drawing the entire structure of the application with two different user models – inventors and inspectors. I then used the Corneal gem to load the Sinatra application template and filled it with all missing files and directories. 
+
+The basic functionality of the application, where an inventor has many inventions, an invention belongs to an inventor, and the role of invention categories (and, by implication, of the join table) is self-explanatory, actually took quite a while to put together, and the time-consuming part was creating routes and links so that every page of the website is linked to all the other pages and that the user doesn’t have to type anything in the URL bar – in other words, all the inventions, inventors and categories are presented in the views as links to their own individual views and there are always links to the list of all the inventions and to the logout. 
+
+But the actual fun began when I tried to figure out how to teach the app to tell an inventor from an inspector, so that an inspector can only change the patent status of inventions, and that and only that is exactly what an inventor cannot do. The distinction between the two classes turned out not to be enough – apparently the decisive parameter is the user id in the session hash which is equal to the primary key of the inventor or inspector respectively, so the brute-force solution was simply to start the self-incrementing primary key of the inspectors from 1 and the inventors from 1001 (even in real life it’s hard to imagine a patent and trademark office with more than a thousand inspectors, whereas the number of inventors can be infinite). This also made it necessary to slightly tweak the helper methods. Apparently Rails has a ready solution for this problem called roles, but it actually was very interesting to code a working solution just using what’s available in Sinatra. 
+
+Another interesting thing that I added to the app was an additional route and an additional view making sure that the user doesn’t delete anything accidentally by asking them whether they are sure they really want to go ahead with deletion. Since both steps deal with deletion, the first form uses just a simple POST route and the second uses a DELETE route with the method override. Since this procedure is very standard, somehow I have a sneaky suspicion that Rails has a less cumbersome implementation up its sleeve. 
+
+Although to my understanding Sinatra is not the framework used in, for lack of a better word, real-life web development, somehow working on this project created a feeling of what working on an actual web application may be like. And it’s an undeniably great feeling when an application that a couple of days ago you didn’t even have a clear understanding of how to put together all over sudden works the way you intended it to work and does exactly what you want it to do. 
+
