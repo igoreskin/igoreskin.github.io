@@ -64,7 +64,7 @@ export default Raduim(App);
 To use media queries in our inline styling, we must go an extra length and use a Radium tool called StyleRoot, which we can also import from Radium: 
 
 ```
-import Radium, { StyleRoot} from 'radium'; 
+import Radium, { StyleRoot } from 'radium'; 
 ```
 
 The difference is that, instead of passing our App to StyleRoot as an argument, we must wrap the entire div in the return statement into StyleRoot to enable the use of inline media queries in the child components of the App: 
@@ -84,7 +84,7 @@ Now, in a child component of the App, let’s say Person, we can declare its own
 
 ```
 const style = {
-    ‘@media (nim-width: 500px)’: {
+    ‘@media (min-width: 500px)’: {
     width: ‘450px’
   }
 }
