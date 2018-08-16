@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Inline styling with Radium and StyleRoot in React "
-date:       2018-08-15 02:59:53 +0000
+date:       2018-08-14 22:59:53 -0400
 permalink:  inline_styling_with_radium_and_styleroot_in_react
 ---
 
@@ -36,7 +36,7 @@ npm install radium
 and then imported at the top of the component in the usual way: 
 
 ```
-import Radiium from ‘radium’;
+import Radium from ‘radium’;
 ```
 
 This will allow us to use pseudoselectors, such as for instance :hover, in our style variable – but, since they are still not CSS features, they must be written as strings: 
